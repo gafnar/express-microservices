@@ -1,0 +1,41 @@
+{
+  "name": "filesystem-microservice",
+  "version": "0.0.0",
+  "description": "filesystem microservices",
+  "author": "Jorge del Portillo<gafnar@git>",
+  "main": "server.js",
+  "dependencies": {
+    "aws-sdk": "2.538.0",
+    "dotenv": "8.1.0",
+    "express": "4.16.4",
+    "express-fileupload": "1.1.6-alpha.5",
+    "express-validator": "6.1.1",
+    "helmet": "3.21.1",
+    "mongoose": "5.4.20",
+    "request": "2.88.0",
+    "winston": "3.2.1"
+  },
+  "scripts": {
+    "up": "docker-compose up",
+    "lint": "eslint src/**",
+    "lint-fix": "eslint --fix src/**",
+    "lint-tests": "eslint test/**",
+    "test": "jest",
+    "coverage": "jest --coverage test",
+    "docker:start": "cross-env NODE_ENV=local pm2-docker start ./server.js"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**",
+      "!src/repository/**"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "jest": "^24.8.0",
+    "supertest": "^4.0.2"
+  }
+}

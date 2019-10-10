@@ -1,0 +1,27 @@
+{
+  "name": "microservices-express",
+  "version": "0.0.0",
+  "description": "Swagger documentation",
+  "author": "Jorge del Portillo <gafnar@git>",
+  "main": "server.js",
+  "dependencies": {
+    "express": "4.16.4",
+    "helmet": "3.21.1",
+    "swagger-ui-express": "4.1.1",
+    "winston": "3.2.1"
+  },
+  "scripts": {
+    "up": "docker-compose up",
+    "lint": "eslint src/**",
+    "lint-fix": "eslint --fix src/**",
+    "lint-tests": "eslint test/**",
+    "test": "jest",
+    "coverage": "jest --coverage test",
+    "docker:start": "cross-env NODE_ENV=local pm2-docker start ./server.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}

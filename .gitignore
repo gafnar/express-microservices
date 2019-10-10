@@ -86,3 +86,9 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+#DS files
+**/._.DS_Store
+**/.DS_Store
+._.DS_Store
+.DS_Store
