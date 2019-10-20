@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN npm install
+RUN mv .env.example .env && npm install
 
 EXPOSE 3001
 

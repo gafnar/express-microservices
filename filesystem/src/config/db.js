@@ -1,6 +1,6 @@
 // Set up mongoose connection
 const mongoose = require('mongoose');
-const log = require('../shared/services/log.service');
+const log = require('../services/log.service');
 
 const { config } = global;
 const setConnection = () => mongoose.connect(config.mongo.uri, { useNewUrlParser: true });

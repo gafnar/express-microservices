@@ -2,7 +2,7 @@ const repository = require('../repository/user.repository');
 const passwordService = require('../services/password.service');
 const { authInvalidKO, loginErrorKO } = require('../responses/auth.response');
 const tokenService = require('../services/token.service');
-const { tokenSignature } = require('../../config/config');
+const { tokenSignature } = require('../config/config');
 
 
 const loginResponseModel = (user, token) => ({

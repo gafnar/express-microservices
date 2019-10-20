@@ -11,13 +11,12 @@
     "winston": "3.2.1"
   },
   "scripts": {
-    "up": "docker-compose up",
+    "start": "node ./server.js",
     "lint": "eslint src/**",
     "lint-fix": "eslint --fix src/**",
     "lint-tests": "eslint test/**",
     "test": "jest",
-    "coverage": "jest --coverage test",
-    "docker:start": "cross-env NODE_ENV=local pm2-docker start ./server.js"
+    "coverage": "jest --coverage test"
   },
   "devDependencies": {
     "eslint": "^5.16.0",

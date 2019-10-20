@@ -1,4 +1,4 @@
-require('dotenv');
+require('dotenv').config();
 global.config = require('./src/config/config');
 const http = require('http');
 const log = require('./src/services/log.service');

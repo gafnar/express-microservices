@@ -2,7 +2,6 @@ global.config = require('./src/config/config');
 const http = require('http');
 const log = require('./src/services/log.service');
 const app = require('./src/app');
-require('./src/config/db');
 
 /**
  * Get port from environment and store in Express.

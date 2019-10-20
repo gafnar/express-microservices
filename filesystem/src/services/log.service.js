@@ -1,6 +1,6 @@
 const winston = require('winston');
 const os = require('os');
-const config = require('../../config/config');
+const config = require('../config/config');
 
 const {
   combine, timestamp, label, printf,
