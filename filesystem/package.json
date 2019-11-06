@@ -11,7 +11,7 @@
     "express-fileupload": "1.1.6-alpha.5",
     "express-validator": "6.1.1",
     "helmet": "3.21.1",
-    "mongoose": "5.4.20",
+    "mongoose": "5.7.5",
     "request": "2.88.0",
     "winston": "3.2.1"
   },
