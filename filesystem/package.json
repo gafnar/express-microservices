@@ -5,7 +5,7 @@
   "author": "Jorge del Portillo<gafnar@git>",
   "main": "server.js",
   "dependencies": {
-    "aws-sdk": "2.538.0",
+    "aws-sdk": "2.814.0",
     "dotenv": "8.1.0",
     "express": "4.16.4",
     "express-fileupload": "1.1.6-alpha.5",
